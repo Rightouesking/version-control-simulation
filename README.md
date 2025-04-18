@@ -1,1 +1,1 @@
-websote project
+website project
