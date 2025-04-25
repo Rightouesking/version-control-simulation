@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Design Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header with logo and nav -->
+  <header>
+    <div class="header-container">
+      <img src="https://via.placeholder.com/150x50" alt="Accessible Design Co. logo" class="logo"/>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>Design That Includes Everyone</h1>
+        <p>We build beautiful, accessible websites for all users.</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+      <h2>About Us</h2>
+      <article>
+        <p>Accessible Design Co. is committed to digital inclusion. We create websites and apps that are easy to use for people of all abilities.</p>
+      </article>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <article class="service-item">
+          <img src="https://via.placeholder.com/100" alt="Icon for accessibility audit"/>
+          <h3>Accessibility Audits</h3>
+          <p>We test and identify barriers to accessibility on your existing site.</p>
+        </article>
+        <article class="service-item">
+          <img src="https://via.placeholder.com/100" alt="Icon for inclusive design"/>
+          <h3>Inclusive Design</h3>
+          <p>UX/UI design solutions for everyone, regardless of ability.</p>
+        </article>
+        <article class="service-item">
+          <img src="https://via.placeholder.com/100" alt="Icon for training"/>
+          <h3>Consulting & Training</h3>
+          <p>We help your team understand and implement accessibility best practices.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form aria-labelledby="contact-heading">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" aria-required="true"/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true" aria-describedby="emailHelp"/>
+        <small id="emailHelp">We’ll never share your email with anyone else.</small>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject"/>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <div id="formFeedback" aria-live="polite"></div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Accessible Design Co. All rights reserved.</p>
+    <div class="footer-contact">
+      <p>Email: info@accessibleco.com</p>
+      <p>Phone: (555) 123-4567</p>
+      <div class="social-media">
+        <a href="#" aria-label="Follow us on Twitter">Twitter</a> |
+        <a href="#" aria-label="Follow us on LinkedIn">LinkedIn</a> |
+        <a href="#" aria-label="Follow us on Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
