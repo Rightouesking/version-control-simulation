@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,13 +8,13 @@
   body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
-    color: #222;
+    background-color: #c02f2f;
+    color: #fffcfc;
   }
   
   a {
     text-decoration: none;
-    color: #0066cc;
+    color: #4ae900;
   }
   
   a:hover,
@@ -28,8 +28,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #222;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .gym-icon {
+    width: 150px;      /* or any size you want */
+    height: auto;      /* keeps aspect ratio */
+    display: block;
+    margin: 0 auto;    /* center the image */
   }
   
   .logo {
@@ -48,7 +55,7 @@
   }
   
   .nav-list li a:focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #ffffff;
     outline-offset: 2px;
   }
   
@@ -57,7 +64,7 @@
     background-image: url('https://via.placeholder.com/1200x400');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 6rem 2rem;
     position: relative;
@@ -86,7 +93,7 @@
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #ffbf47;
-    color: #000;
+    color: #000000;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -114,11 +121,11 @@
   }
   
   .service-item {
-    background-color: #f9f9f9;
+    background-color: #c02f2f;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .service-item img {
@@ -168,7 +175,7 @@
   
   /* Footer */
   footer {
-    background-color: #222;
+    background-color: #000000;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -206,3 +213,4 @@
       text-align: center;
     }
   }
+  
